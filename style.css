@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #f5eec2;
+}
+
+
+header {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.6em;
+    border-bottom: 1px solid black;
+}
+
+section {
+    font-size: 1.4rem;
+    padding: 2em;
+    text-align: center;
+}
+
+.flex-conatiner {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.buttons {
+    margin-top: 3em;
+}
+
+button {
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #d5e6a4;
+}
+
+button + button {
+    margin-left: 2em;
+}
+
+/* Restart popup modal */
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+.modal-container.show {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.restart-modal p {
+    font-size: 1.3rem;
+}
+
+.restart-modal {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.restart-modal button {
+    background-color: #47a386;
+    border: 0;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-top: 6em;
+}
+

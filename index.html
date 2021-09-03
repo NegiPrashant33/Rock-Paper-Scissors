@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <section>
+        <h2 class="score">Score</h2>
+        <div class="flex-conatiner">
+            <div>
+                <h3 class="player">Player: 0</h3>
+                <i id="player-choice"></i>
+            </div>
+            <div>
+                <h3 class="computer">Computer: 0</h3>
+                <i id="computer-choice"></i>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="rock-btn">
+                <i class="far fa-hand-rock fa-10x"></i>
+            </button>
+            <button id="paper-btn">
+                <i class="far fa-hand-paper fa-10x"></i>
+            </button>
+            <button id="scissors-btn">
+                <i class="far fa-hand-scissors fa-10x"></i>
+            </button>
+        </div>
+    </section>
+    <div class="modal-container close">
+        <div class="restart-modal">
+            <h1 class="result-display"></h1>
+            <p>Would you like to try again?</p>
+            <button class="restart-button">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
